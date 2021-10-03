@@ -489,13 +489,12 @@ ul li ul:hover ul.more-links {
 .bg-color1 {
   margin-top: 150px;
   background-color: rgba(111, 66, 193, 0.05);
-  height: 900px;
+  height: 750px;
 }
 .symptoms {
   text-align: center;
-  /* margin-top: 100px; */
-  /* position: relative;
-  top: 100px; */
+  position: relative;
+  top: 100px;
 }
 .symptoms h4 {
   color: #6f42c1;
@@ -508,6 +507,7 @@ ul li ul:hover ul.more-links {
   line-height: 27px;
   color: #808080;
   margin: 10px 0;
+  margin-top: 10px;
 }
 .image img {
   width: 90px;
@@ -544,6 +544,7 @@ ul li ul:hover ul.more-links {
   flex-wrap: wrap;
   position: relative;
   left: 60px;
+  margin-top: 135px;
 }
 .contact {
   display: flex;
@@ -573,4 +574,87 @@ ul li ul:hover ul.more-links {
   padding: 10px;
   border: none;
   margin-top: 30px;
+}
+
+.articles {
+  text-align: center;
+  margin-top: 60px;
+}
+.articles h4 {
+  color: #6f42c1;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 800;
+}
+.articles p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #808080;
+}
+
+.news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+  margin: 50px 0;
+}
+
+.flaticon-speech-bubble,
+.flaticon-man-user {
+  color: #cccccc;
+  width: 10px;
+  height: 10px;
+}
+.text-center a span {
+  text-decoration: none;
+  color: #aaaaaa;
+  text-transform: uppercase;
+}
+.text-center a {
+  text-decoration: none;
+  color: #aaaaaa;
+  position: relative;
+  left: 160px;
+  margin: 0 10px;
+}
+.news-1 h3 {
+  color: #6f42c1;
+  font-size: 18px;
+  line-height: 21.6px;
+  text-align: center;
+  margin-top: 15px;
+  position: relative;
+  left: 45px;
+}
+.date {
+  color: white;
+  background-color: #6f42c1;
+  padding: 8px 20px;
+  line-height: 20.4px;
+  font-size: 12px;
+  text-align: center;
+  border: none;
+  position: relative;
+  left: 220px;
+  bottom: 15px;
+}
+.news-1 img {
+  width: 76%;
+  height: 80%;
+  margin: 0 100px;
+  /* position: relative;
+  right: 50px; */
+}
+
+.footer-element {
+  display: flex;
+}
+.footer-element2 {
+  display: flex;
+  width: 65%;
+}
+.footer-element1 {
+  width: 35%;
 }
