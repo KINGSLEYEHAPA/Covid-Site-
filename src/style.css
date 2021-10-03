@@ -19,7 +19,7 @@ body {
 }
 #navigation p {
   margin-left: 100px;
-  color: black;
+  color: gray;
   font-size: 20px;
   font-weight: 700;
 }
@@ -45,7 +45,7 @@ ul li ul {
 }
 .nav-bar li a {
   text-decoration: none;
-  color: black;
+  color: gray;
   font-size: 16px;
 }
 
@@ -53,36 +53,45 @@ ul li ul.submenu {
   display: none;
   position: absolute;
   z-index: 200;
-  width: 200px;
+  width: 220px;
+  height: auto;
   /* height: 150px; */
   line-height: 27px;
-  padding: 25px 15px;
+  padding: 10px 5px;
+}
+ul li ul.submenu li {
+  padding-left: 10px;
+  text-align: left;
+  margin: 10px;
 }
 
 ul li ul.submenu li a {
   color: black;
   background-color: rgba(183, 183, 182, 63 0.1);
-  margin: 5px 0;
+  margin: 15px 0;
   width: 100%;
 }
 
 ul li:hover ul.submenu {
   display: block;
-  /* margin-top: 5px; */
   width: 200px;
-  padding-left: 0;
+
   background-color: white;
   line-height: 27px;
   text-align: left;
+  color: black;
 }
 
 ul li ul.more-links {
   display: none;
+  position: absolute;
+  z-index: -201;
 }
 ul li ul:hover ul.more-links {
   display: block;
-  /* position: absolute;
-  z-index: 150; */
+  position: absolute;
+
+  z-index: 150;
   background-color: white;
 }
 
@@ -96,15 +105,16 @@ ul li ul:hover ul.more-links {
   height: 470px;
   justify-content: flex-end;
   align-items: center;
-  border-bottom-right-radius: 60%;
+  border-bottom-right-radius: 60% 52%;
 }
 .hero aside img {
   width: 70%;
   position: relative;
-  left: 180px;
+  left: 200px;
   z-index: -1;
   overflow: hidden;
-  top: 30px;
+  top: 50px;
+  border-bottom-right-radius: 100% 55%;
 }
 
 .hero-content {
@@ -218,6 +228,12 @@ ul li ul:hover ul.more-links {
   padding-left: 30px;
   margin-top: 15px;
 }
+.covid-info ul li {
+  color: #808080;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+}
 
 .covid-info button {
   background-color: #6f42c1;
@@ -261,6 +277,7 @@ ul li ul:hover ul.more-links {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .covid-icon {
@@ -292,4 +309,268 @@ ul li ul:hover ul.more-links {
   color: #aaaaaa;
   font-size: 16px;
   line-height: 27px;
+}
+
+.box-wrapper {
+  height: 300px;
+  width: 260px;
+  background-color: rgba(111, 66, 193, 0.2);
+  border-radius: 7px;
+  margin: 150px;
+  box-shadow: 1px 1px 1px rgba(111, 66, 193, 0.05);
+}
+
+.box-wrapper1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-wrapper2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  bottom: 500px;
+  left: 280px;
+}
+.second-wrapper {
+  width: 500px;
+  margin-top: 260px;
+}
+.flaticon-social-distancing,
+.flaticon-hand-washing,
+.flaticon-stay-at-home {
+  content: "";
+  font-size: 50px;
+  color: #6f42c1;
+  font-weight: 400;
+  position: relative;
+  top: 50px;
+}
+.icon-container .flaticon-face-mask {
+  content: "";
+  font-size: 50px;
+  color: #6f42c1;
+  font-weight: 400;
+  position: relative;
+  top: 50px;
+}
+
+.box-wrapper .body {
+  height: 50%;
+  background-color: white;
+}
+.icon-container {
+  height: 50%;
+}
+.bg-color {
+  background-color: rgba(111, 66, 193, 0.05);
+  height: 900px;
+}
+
+.body h3 {
+  text-align: center;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #6f42c1;
+  margin-top: 15px;
+}
+.body p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 23.8px;
+  color: #aaaaaa;
+}
+
+.body h3,
+.body p {
+  text-align: justify;
+  padding: 0 30px;
+}
+.box-pos {
+  position: relative;
+  bottom: 570px;
+}
+.box-pos1 {
+  position: relative;
+  bottom: 1070px;
+}
+
+.wrapper-height {
+  position: relative;
+  right: 80px;
+}
+.second-wrapper h2 {
+  color: #6f42c1;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 900;
+}
+.second-wrapper p {
+  color: #808080;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  margin-top: 25px;
+}
+.second-wrapper ul {
+  list-style-type: none;
+  padding-left: 30px;
+  margin-top: 15px;
+}
+.second-wrapper ul li {
+  color: #808080;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+}
+.second-wrapper button {
+  background-color: #6f42c1;
+  color: white;
+  margin-top: 70px;
+  width: 250px;
+  height: 40px;
+  border-radius: 100px;
+  padding: 10px;
+  border: none;
+}
+
+.second-wrapper button a {
+  color: white;
+  text-decoration: none;
+}
+.to-do {
+  text-align: center;
+  margin-top: 100px;
+}
+.to-do p {
+  font-size: 16px;
+  line-height: 27px;
+  color: #808080;
+  margin: 10px 0;
+}
+.to-do h5 {
+  color: #6f42c1;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 800;
+}
+
+.important {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 150px;
+}
+
+.important1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+
+.important1 ul {
+  list-style-type: none;
+  position: relative;
+  top: 10px;
+}
+.important1 ul li {
+  color: #808080;
+  font-size: 16px;
+  line-height: 27px;
+  padding: 5px 0;
+}
+
+.important-img {
+  margin-top: 50px;
+}
+.bg-color1 {
+  margin-top: 150px;
+  background-color: rgba(111, 66, 193, 0.05);
+  height: 900px;
+}
+.symptoms {
+  text-align: center;
+  /* margin-top: 100px; */
+  /* position: relative;
+  top: 100px; */
+}
+.symptoms h4 {
+  color: #6f42c1;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 800;
+}
+.symptoms p {
+  font-size: 16px;
+  line-height: 27px;
+  color: #808080;
+  margin: 10px 0;
+}
+.image img {
+  width: 90px;
+  height: 100px;
+}
+.symptoms3 {
+  width: 600px;
+  height: 150px;
+  background-color: white;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.symptoms3 .text {
+  padding: 0 15px;
+  margin-top: 20px;
+}
+
+.text h6 {
+  line-height: 19.2px;
+  color: #6f42c1;
+  font-size: 16px;
+}
+.text p {
+  font-size: 16px;
+  line-height: 27px;
+  color: #808080;
+  margin: 10px 0;
+}
+
+.symptoms2 {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: 60px;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+.contact p span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  color: #6f42c1;
+}
+.contact p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #808080;
+}
+.contact button {
+  background-color: #6f42c1;
+  color: white;
+  margin-top: 70px;
+  width: 150px;
+  height: 40px;
+  border-radius: 100px;
+  padding: 10px;
+  border: none;
+  margin-top: 30px;
 }
