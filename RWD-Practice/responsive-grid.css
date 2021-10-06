@@ -1,0 +1,12 @@
+.grid-item {
+  background: magenta;
+  padding: 25px;
+  color: white;
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template: 25% 50% 10%/ 25% 30%;
+  gap: 12px 10px;
+  /* background-color: rgb(238, 158, 238); */
+}
