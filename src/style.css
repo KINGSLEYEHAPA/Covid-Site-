@@ -276,26 +276,28 @@ body {
   color: white;
 }
 
-.play-btn a img {
-  width: 50px;
-  height: 50px;
-  position: relative;
-  top: 10px;
-  left: 5px;
-}
 .play-btn {
   position: absolute;
-  top: 1322px;
-  left: 480px;
+  top: 1325px;
+  left: 470px;
   text-align: center;
   display: flex;
   align-items: center;
+  z-index: 5;
 }
 .play-btn p {
   color: white;
   font-weight: 400;
   line-height: 27px;
   font-size: 16px;
+  margin-right: 8px;
+}
+.play-btn button {
+  background-color: #6f42c1;
+  color: white;
+  padding: 22px;
+  outline: none;
+  border: none;
 }
 .covid-wrapper {
   display: flex;
