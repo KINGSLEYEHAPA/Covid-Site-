@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #f70816;
-
+  margin-bottom: 2rem;
   height: 1024px;
   width: 100%;
   margin: 10px;
@@ -31,6 +31,7 @@ body {
     "locations"
     "footer";
 }
+/* media query starts */
 
 @media only screen and (min-width: 768px) {
   #grid-container {
@@ -98,13 +99,16 @@ body {
   }
 
   #header ul li {
-    padding: 10px 15px;
+    padding: 0.8rem 1.2rem;
   }
   #header ul li a {
     font-size: 1.2rem;
     border: none;
+    font-weight: 900;
   }
 }
+
+/* media query ends */
 
 #header {
   grid-area: header;
@@ -122,10 +126,10 @@ body {
 }
 #header ul li a,
 #header p {
-  margin-left: 0.8rem;
+  margin: 0.2rem 0.8rem;
 }
 #header p {
-  font-size: 2rem;
+  font-size: 3vw;
   color: #f83a45;
   padding: 5px;
   margin-bottom: 0.3rem;
@@ -149,7 +153,8 @@ body {
   z-index: 25;
   margin-left: 1.2rem;
   color: white;
-  top: 15rem;
+  top: 14.8rem;
+  right: 25vw;
   padding: 1.2rem;
 }
 #hero div h1 {
@@ -174,12 +179,11 @@ body {
   padding: 5px;
 }
 
-/* #hero div h3 p span:first-child {
-  color: #f83a45;
-} */
-
 #hero div > * {
   text-align: justify;
+  width: 100%;
+}
+#hero img {
   width: 100%;
 }
 
@@ -188,6 +192,40 @@ body {
   background-color: #f70816;
   width: 100%;
   padding: 10px;
+}
+#mbox-1 div h5,
+#mbox-2 div h5,
+#mbox-3 div h5,
+#mbox-4 div h5 {
+  color: white;
+}
+
+#mbox-1 div p,
+#mbox-2 div p,
+#mbox-3 div p,
+#mbox-4 div p {
+  color: white;
+  background-color: rgba(231, 241, 231, 0.1);
+  text-align: left;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+#mbox-1 div button,
+#mbox-2 div button,
+#mbox-3 div button,
+#mbox-4 div button {
+  color: #f83a45;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 0.6rem;
+  margin: 0.8rem 0;
+  border-radius: 0.5rem;
+  font-weight: 900;
+  text-align: center;
 }
 
 #mbox-2 {
@@ -212,7 +250,7 @@ body {
 #mbox-2 img,
 #mbox-3 img,
 #mbox-4 img {
-  height: 75%;
+  height: 20rem;
   width: 100%;
   margin: 2%;
   border-radius: 8px;
@@ -224,16 +262,47 @@ body {
 #features {
   grid-area: features;
   background-color: #f83a45;
+  text-align: center;
 }
+
+#features p,
+#locations p {
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin: 0.8rem 0;
+}
+#features ul,
+#locations ul {
+  list-style: none;
+}
+#features ul,
+#features p {
+  padding: 0 0.8rem;
+}
+#features ul li,
+#locations ul li {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: white;
+  text-align: justify;
+}
+#features ul li:before,
+#locations ul li:before {
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  padding-right: 0.8rem;
+  width: 0.05rem;
+}
+
 #locations {
   grid-area: locations;
   background-color: #f70816;
+  margin-top: 0;
+  text-align: center;
 }
 #footer {
   grid-area: footer;
   background-color: #f83a45;
-}
-
-#hero img {
-  width: 100%;
 }
