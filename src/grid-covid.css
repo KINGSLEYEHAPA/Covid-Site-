@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: grid;
+
+  background-color: rgba(111, 66, 193, 0.1);
+
+  gap: 25px;
+  grid-template-rows: repeat(89, 40px);
+  grid-template-columns: 1fr 1fr 4fr;
+  grid-template-areas:
+    "header header header"
+    "hero hero hero"
+    "stats stats stats"
+    "video video definition"
+    "ppts ppts ppts"
+    "card card how-to"
+    "protect protect protect"
+    "shield shield shield"
+    "symptoms symptoms symptoms"
+    "symptoms-cards symptoms-cards symptoms-cards"
+    "news news news"
+    "community community community"
+    "footer footer footer";
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 12fr 2fr 3fr 3fr 3fr 6fr 6fr 12fr 2fr 8fr 2fr 40fr 6fr;
+    grid-template-areas:
+      "header"
+      "hero"
+      "stats"
+      "video"
+      "definition"
+      "ppts"
+      "card"
+      "how-to"
+      "protect"
+      "shield"
+      "symptoms"
+      "symptoms-cards"
+      "news"
+      "community"
+      "footer";
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+  body {
+    display: grid;
+    grid-template-rows: 1fr 6fr 4fr 4fr 2fr 5fr 5fr 6fr 3fr 6fr 2fr 4fr 4fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "header header "
+      "hero hero"
+      "stats stats"
+      "video definition"
+      "ppts ppts"
+      "card how-to"
+      "protect protect"
+      "shield shield"
+      "symptoms symptoms"
+      "symptoms-cards symptoms-cards"
+      "news news"
+      "community community"
+      "footer footer";
+  }
+}
+
+#header,
+#hero,
+#stats,
+#video,
+#definition,
+#ppts,
+#card,
+#how-to,
+#protect,
+#shield,
+#symptoms,
+#symptoms-cards,
+#news,
+#community,
+#footer {
+  background-color: #6f42c1;
+  border: 5px solid rgba(109, 112, 94, 0.7);
+  text-align: center;
+}
+
+#header {
+  grid-area: header;
+  background-color: #808080;
+  grid-row: span 2;
+}
+#hero {
+  grid-area: hero;
+  grid-row: span 7;
+  background-color: rgba(111, 66, 193, 0.1);
+}
+#stats {
+  grid-area: stats;
+  grid-row: span 6;
+}
+#video {
+  grid-area: video;
+  grid-row: span 6;
+  background-color: #a2142c;
+}
+#definition {
+  grid-area: definition;
+  grid-row: span 6;
+  background-color: #cf1a38;
+}
+#ppts {
+  grid-area: ppts;
+  grid-row: span 2;
+  background-color: yellow;
+}
+#card {
+  grid-area: card;
+  grid-row: span 10;
+  background-color: khaki;
+}
+#how-to {
+  grid-area: how-to;
+  grid-row: span 10;
+  background-color: orange;
+}
+#protect {
+  grid-area: protect;
+  grid-row: span 8;
+  background-color: red;
+}
+#shield {
+  grid-area: shield;
+  grid-row: span 9;
+  background-color: brown;
+}
+#symptoms {
+  grid-area: symptoms;
+  grid-row: span 5;
+  background-color: coral;
+}
+#symptoms-cards {
+  grid-area: symptoms-cards;
+  grid-row: span 8;
+  background-color: cyan;
+}
+#news {
+  grid-area: news;
+  grid-row: span 4;
+  background-color: darkgray;
+}
+#community {
+  grid-area: community;
+  grid-row: span 8;
+  background-color: darkslateblue;
+}
+#footer {
+  grid-area: footer;
+  grid-row: span 8;
+  background-color: darkviolet;
+}

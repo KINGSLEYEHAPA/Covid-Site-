@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  margin: 0 75px;
+}
+
+#grid-container {
+  display: grid;
+  display: flex;
+  flex-direction: column;
+  background-color: #f70816;
+
+  height: 1024px;
+  width: 100%;
+  margin: 10px;
+  font-size: 0.8rem;
+  grid-template-columns: 100%;
+  grid-template-rows: 8fr 10fr 1fr 1fr 1fr 1fr 8fr 12fr 8fr;
+  grid-template-areas:
+    "header"
+    "hero"
+    "movie1"
+    "movie2"
+    "movie3"
+    "movie4"
+    "features"
+    "locations"
+    "footer";
+}
+
+@media only screen and (min-width: 768px) {
+  #grid-container {
+    display: grid;
+    display: flex;
+    font-size: 1.5rem;
+    background-color: #f70816;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 5fr 5fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "hero hero"
+      "movies movies"
+      "movies movies"
+      "features features"
+      "locations locations"
+      "footer footer";
+  }
+
+  #header {
+    display: flex;
+    grid-area: header;
+    background-color: #f70816;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #mbox-1 {
+    grid-area: movie1;
+  }
+
+  #mbox-1 img,
+  #mbox-2 img,
+  #mbox-3 img,
+  #mbox-4 img {
+    height: 75%;
+    margin: 25px;
+  }
+  #mbox-1 div,
+  #mbox-2 div,
+  #mbox-3 div,
+  #mbox-4 div {
+    height: 50%;
+  }
+  #mbox-2 {
+    grid-area: movie2;
+  }
+  #mbox-3 {
+    grid-area: movie3;
+  }
+  #mbox-4 {
+    grid-area: movie4;
+  }
+  #new-movies {
+    display: flex;
+    grid-area: movies;
+    text-align: center;
+    background-color: #f70816;
+  }
+
+  #header ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    position: relative;
+  }
+
+  #header ul li {
+    padding: 10px 15px;
+  }
+  #header ul li a {
+    font-size: 1.2rem;
+    border: none;
+  }
+}
+
+#header {
+  grid-area: header;
+  background-color: #f70816;
+  border: solid 4px #f83a45;
+}
+#header ul {
+  list-style: none;
+  line-height: 2.5rem;
+}
+#header ul li a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 0.2rem;
+}
+#header ul li a,
+#header p {
+  margin-left: 0.8rem;
+}
+#header p {
+  font-size: 2rem;
+  color: #f83a45;
+  padding: 5px;
+  margin-bottom: 0.3rem;
+  font-weight: 900;
+  background-color: green;
+}
+
+#hero {
+  grid-area: hero;
+  background-color: #f70816;
+}
+#hero img {
+  position: relative;
+}
+
+#hero div {
+  width: 50vw;
+  height: 32vw;
+  background-color: rgba(247, 8, 22, 0.25);
+  position: absolute;
+  z-index: 25;
+  margin-left: 1.2rem;
+  color: white;
+  top: 15rem;
+  padding: 1.2rem;
+}
+#hero div h1 {
+  margin-bottom: 10px;
+}
+#hero div h1,
+#hero div h3,
+#hero div p {
+  font-size: 2vw;
+}
+
+#hero div p {
+  margin-top: 10px;
+}
+#hero div h3 p {
+  display: inline-block;
+
+  color: #f83a45;
+  background-color: green;
+  margin-bottom: 0.3rem;
+  font-weight: 900;
+  padding: 5px;
+}
+
+/* #hero div h3 p span:first-child {
+  color: #f83a45;
+} */
+
+#hero div > * {
+  text-align: justify;
+  width: 100%;
+}
+
+#mbox-1 {
+  grid-area: movie1;
+  background-color: #f70816;
+  width: 100%;
+  padding: 10px;
+}
+
+#mbox-2 {
+  grid-area: movie2;
+  background-color: #f70816;
+  width: 100%;
+  padding: 10px;
+}
+#mbox-3 {
+  grid-area: movie3;
+  background-color: #f70816;
+  width: 100%;
+  padding: 10px;
+}
+#mbox-4 {
+  grid-area: movie4;
+  background-color: #f70816;
+  width: 100%;
+  padding: 10px;
+}
+#mbox-1 img,
+#mbox-2 img,
+#mbox-3 img,
+#mbox-4 img {
+  height: 75%;
+  width: 100%;
+  margin: 2%;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  left: -7px;
+}
+
+#features {
+  grid-area: features;
+  background-color: #f83a45;
+}
+#locations {
+  grid-area: locations;
+  background-color: #f70816;
+}
+#footer {
+  grid-area: footer;
+  background-color: #f83a45;
+}
+
+#hero img {
+  width: 100%;
+}
