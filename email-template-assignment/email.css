@@ -6,6 +6,7 @@
 }
 body {
   margin: 0 75px;
+  background-color: #e7b7b9;
 }
 
 #grid-container {
@@ -110,6 +111,7 @@ body {
 
 /* media query ends */
 
+/* header section */
 #header {
   grid-area: header;
   background-color: #f70816;
@@ -250,7 +252,7 @@ body {
 #mbox-2 img,
 #mbox-3 img,
 #mbox-4 img {
-  height: 20rem;
+  height: 30rem;
   width: 100%;
   margin: 2%;
   border-radius: 8px;
